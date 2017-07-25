@@ -1,6 +1,6 @@
 0->I
-Disp "A: ", A
-Disp "B: ", B
+Input "A: ", A
+Input "B: ", B
 {A,1,0}->L1
 {B,0,1}->L2
 While L2(1)>0
@@ -12,7 +12,7 @@ iPart(A/B)->Q
 A-B*int(A/B)->R
 L1-Q*L2->L3
 L2->L1
-L3-L2
+L3->L2
 If I=0
 Then
 I+1->I
