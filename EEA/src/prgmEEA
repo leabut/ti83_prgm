@@ -6,8 +6,8 @@ Input "B: ", B
 While L2(1)>0
 L1(1)->A
 L2(1)->B
-L2(2)->S
-L2(3)->T
+L2(2)->T
+L2(3)->S
 iPart(A/B)->Q
 A-B*int(A/B)->R
 L1-Q*L2->L3
