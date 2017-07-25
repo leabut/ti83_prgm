@@ -1,0 +1,48 @@
+Input "X: ",X
+Input "G: ",G
+Input "R: ",R
+Input "S: ",S
+R*S+1->P
+R-1->dim(L1)
+R-1->dim(L2)
+S-1->dim(L3)
+S-1->dim(L4)
+X->B
+S->E
+prgmHMODPOW
+H->K
+For(I,0,R-1)
+I->L1(I+1)
+I*S->E
+G->B
+prgmHMODPOW
+H->L2(I+1)
+If H=K
+Then
+Disp "X^S=G^(I*S)",K,"I=",I
+I->O
+Goto A
+End
+End
+Lbl A
+Input Q
+X->B
+R->E
+prgmHMODPOW
+H->L
+For(I,0,S-1)
+I->L3(I+1)
+I*R->E
+G->B
+prgmHMODPOW
+H->L4(I+1)
+If H=L
+Then
+Disp "X^R=G^(I*R)",L,"I=",I
+Goto B
+End
+End
+Lbl B
+Input Q
+Disp "I=Y MOD R",O,R
+Disp "I=Y MOD S",I,S

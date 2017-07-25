@@ -1,0 +1,12 @@
+P->M
+If M<=1
+Then
+Disp "HMODPOW ERROR"
+Stop
+End
+1->H
+For(J,1,E)
+(H*B)->A
+A-M*int(A/M)->H
+End
+Return

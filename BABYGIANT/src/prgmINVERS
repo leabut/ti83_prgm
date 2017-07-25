@@ -1,0 +1,13 @@
+H-P*int(H/P)->H
+For(J,1,P-1)
+H*J->F
+F-P*int(F/P)->F
+If F=1
+Then
+J->H
+Return
+End
+End
+-1->H
+Disp "NO INVERS FOUND"
+Return

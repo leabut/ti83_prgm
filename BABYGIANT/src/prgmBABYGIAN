@@ -1,0 +1,22 @@
+Input "X: ",X
+Input "G: ",G
+Input "P: ",P
+int(sqrt(p)+1)->R
+R-1->dim(L1)
+R-1->dim(L2)
+R-1->dim(L2)
+0->dim(L4)
+For(I,0,R-1)
+I->L1(I+1)
+I->E
+G->B
+prgmHMODPOW
+H->L2(I+1)
+G->H
+prgmINVERS
+H->B
+R*I->E
+prgmHMODPOW
+H*x-P*int(H*X/P)->H
+H->L3(I+1)
+End

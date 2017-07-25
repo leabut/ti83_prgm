@@ -1,0 +1,15 @@
+0->I
+Input "BASE: ",B
+Input "EXP: ",E
+Input "MOD: ",M
+If M<=1
+Then
+0
+Stop
+1->C
+For(I,1,E)
+(C*B)->X
+X-M*int(X/M)->C
+End
+Disp C
+Stop

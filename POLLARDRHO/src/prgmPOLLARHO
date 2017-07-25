@@ -1,0 +1,36 @@
+Input "A: ",A
+Input "N: ",N
+A->X
+A->Y
+0->dim(L1)
+0->dim(L2)
+0->dim(L3)
+0->dim(L4)
+10->dim(L1)
+X->L1(1)
+10->dim(L2)
+Y->L2(1)
+10->dim(L3)
+10->dim(L4)
+0->D
+2->I
+While D<=1
+Y1(X)->X
+X-N*int(X/N)->X
+Y1(Y)->Y
+Y-N*int(Y/N)->Y
+Y1(Y)->Y
+Y-N*int(Y/N)->Y
+X->L1(I)
+Y->L2(I)
+abs(Y-X)->L3(I)
+gcd(abs(Y-X),N)->D
+D->L4(I)
+I+1->I
+End
+If D!=N
+Then
+Disp "D: ",D
+Else
+Disp "INVALID A"
+End
