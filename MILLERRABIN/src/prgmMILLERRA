@@ -1,0 +1,50 @@
+Input "A: ",L
+Input "N: ",N
+0->I
+N-1->H
+Lbl A
+H/2->S
+int(H/2)->T
+S->H
+If S-T=0
+Then
+I+1->I
+Goto A
+End
+I->S
+(N-1)/2^S->T
+N->P
+Disp "S=",S
+Disp "T=",T
+0->dim(L1)
+0->dim(L2)
+0->dim(L3)
+0->dim(L4)
+S->dim(L1)
+S->dim(L2)
+If gcd(L,N)!=1
+Then
+Disp "GGT(A,N)!=1"
+Stop
+End
+For(I,0,S-1)
+L->B
+2^I*T->E
+prgmHMODPOW
+I->L1(I+1)
+H->L2(I+1)
+If I=0
+Then
+If H=1
+Then
+Disp "A^T=1"
+Stop
+End
+Else
+If H=N-1
+Then
+Disp "A^(2^(I)*T)=-1"
+Disp "I=",I
+End
+End
+End

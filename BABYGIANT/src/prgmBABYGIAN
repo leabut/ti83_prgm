@@ -17,6 +17,6 @@ prgmINVERS
 H->B
 R*I->E
 prgmHMODPOW
-H*x-P*int(H*X/P)->H
+H*X-P*int(H*X/P)->H
 H->L3(I+1)
 End
